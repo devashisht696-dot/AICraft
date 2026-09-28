@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07101d"/><stop offset=".55" stop-color="#111e38"/><stop offset="1" stop-color="#17112d"/></linearGradient><radialGradient id="glow"><stop stop-color="#55d9ff" stop-opacity=".5"/><stop offset="1" stop-color="#55d9ff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1000" height="560" fill="url(#bg)"/><circle cx="780" cy="120" r="250" fill="url(#glow)"/>
+<g stroke="#55d9ff" stroke-opacity=".25" fill="none"><path d="M80 430L270 250l170 120 190-220 180 100"/><circle cx="270" cy="250" r="8" fill="#55d9ff"/><circle cx="460" cy="370" r="8" fill="#8b6cff"/><circle cx="650" cy="150" r="8" fill="#55d9ff"/></g>
+<text x="70" y="115" fill="#55d9ff" font-family="Arial" font-size="28" font-weight="700">AICRAFT</text>
+<text x="70" y="185" fill="#edf5ff" font-family="Arial" font-size="52" font-weight="800">AI BASICS</text>
+<text x="70" y="235" fill="#9aaac0" font-family="Arial" font-size="25">Understand the technology behind intelligent systems</text>
+<text x="760" y="420" text-anchor="middle" fill="#edf5ff" font-family="Arial" font-size="100" font-weight="800">AI</text>
+</svg>
