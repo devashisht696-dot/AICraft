@@ -1,0 +1,11 @@
+const path=location.pathname;
+const page=path.split("/").pop()||"index.html";
+document.querySelectorAll(".navlinks a").forEach(a=>{const href=a.getAttribute("href");if(href===page||(page==="index.html"&&href==="index.html"))a.classList.add("active")});
+const menu=document.querySelector(".menu"),nav=document.querySelector(".navlinks");
+if(menu)menu.addEventListener("click",()=>{nav.classList.toggle("open")});
+const modal=document.querySelector(".modal"),close=document.querySelector(".close");
+document.querySelectorAll("[data-modal]").forEach(b=>b.addEventListener("click",()=>{const body=document.querySelector("#modalBody");body.innerHTML=b.dataset.modal;modal.classList.remove("hidden2")}));
+if(close)close.addEventListener("click",()=>modal.classList.add("hidden2"));
+if(modal)modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.add("hidden2")});
+document.querySelectorAll("[data-project]").forEach(b=>b.addEventListener("click",()=>{document.querySelector("#modalBody").innerHTML=`<h2>${b.dataset.project}</h2><p>Define a clear problem, create or use suitable sample data, build a simple interface, test your idea, and document the results. For a school demonstration, avoid collecting real personal information.</p>`;modal.classList.remove("hidden2")}));
+const year=document.querySelector("#year");if(year)year.textContent=new Date().getFullYear();
