@@ -1272,3 +1272,43 @@ h3 {
     }
   }
 }
+
+.creator-name {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid rgba(84, 220, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(84, 220, 255, 0.05);
+  white-space: nowrap;
+}
+
+.creator-name span {
+  color: #7f8da3;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.creator-name strong {
+  color: #54dcff;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(84, 220, 255, 0.45);
+}
+
+@media (max-width: 700px) {
+  .creator-name span {
+    display: none;
+  }
+
+  .creator-name {
+    padding: 7px 10px;
+  }
+
+  .creator-name strong {
+    font-size: 12px;
+  }
+}
